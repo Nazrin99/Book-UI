@@ -3,7 +3,7 @@ import {PaletteTree} from "./palette";
 import Button from "../components/Button";
 import {backButtonHandler} from "../handler/buttonHandler";
 import InputField from "../components/InputField";
-import MainPage from "../pages/MainPage";
+import SubmitBookPage from "../pages/SubmitBookPage";
 
 const ComponentPreviews = () => {
     return (
@@ -14,8 +14,8 @@ const ComponentPreviews = () => {
             <ComponentPreview path="/InputField">
                 <InputField hint={"This is hint"}/>
             </ComponentPreview>
-            <ComponentPreview path="/MainPage">
-                <MainPage/>
+            <ComponentPreview path="/SubmitBookPage">
+                <SubmitBookPage/>
             </ComponentPreview>
         </Previews>
     );

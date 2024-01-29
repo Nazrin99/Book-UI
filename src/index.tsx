@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
-import MainPage from "./pages/MainPage";
+import SubmitBookPage from "./pages/SubmitBookPage";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <DevSupport ComponentPreviews={ComponentPreviews} useInitialHook={useInitial}>
-            <MainPage/>
+            <SubmitBookPage/>
         </DevSupport>
     </React.StrictMode>
 );

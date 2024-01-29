@@ -18,7 +18,7 @@ import useFetch from "../hooks/useFetch";
 import {BookResponseBody} from "../service/responseBodyModel";
 import {GET_BOOK_BY_ID} from "../service/bookEndpoint";
 
-const MainPage = () => {
+const SubmitBookPage = () => {
 
     return (
         <div>
@@ -38,4 +38,4 @@ const MainPage = () => {
     )
 }
 
-export default MainPage;
+export default SubmitBookPage;
