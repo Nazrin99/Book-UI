@@ -1,0 +1,8 @@
+export const SUBMIT_A_BOOK_WITH_US_TEXT = "Submit a Book with Us! 😄"
+export const BACK_TEXT = "Back"
+export const SUBMIT_TEXT = "Submit"
+export const BOOK_TITLE_TEXT = "Book Title"
+export const PUBLISHED_YEAR_TEXT = "Published Year"
+export const GENRE_TEXT = "Genre"
+export const AUTHOR_NAME_TEXT = "Author Name"
+export const NUMBER_OF_PAGES_TEXT = "Number of Pages"
