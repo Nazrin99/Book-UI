@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import {backButtonHandler, submitButtonHandler} from "../handler/buttonHandler";
+import {submitButtonHandler} from "../handler/buttonHandler";
 import Header from "../components/Header";
 import InputField from "../components/InputField";
 import React from "react";
@@ -14,16 +14,17 @@ import {
     SUBMIT_A_BOOK_WITH_US_TEXT,
     SUBMIT_TEXT
 } from "../constants/strings/strings";
-import useFetch from "../hooks/useFetch";
-import {BookResponseBody} from "../service/responseBodyModel";
-import {GET_BOOK_BY_ID} from "../service/bookEndpoint";
+import {useNavigate} from "react-router-dom";
 
 const SubmitBookPage = () => {
+    const navigate = useNavigate();
 
     return (
         <div>
             <div className={"buttonContainer"}>
-                <Button text={BACK_TEXT} onClickHandler={backButtonHandler}/>
+                <Button text={BACK_TEXT} onClickHandler={() => {
+                    navigate("/main-page")
+                }} />
                 <Button text={SUBMIT_TEXT} onClickHandler={submitButtonHandler}/>
             </div>
             <Header text={SUBMIT_A_BOOK_WITH_US_TEXT}/>

@@ -4,12 +4,13 @@ import React from "react";
 
 interface ButtonProps {
     text: string;
+    disabled?: boolean;
     onClickHandler: MouseEventHandler
 }
 
-const Button: React.FC<ButtonProps> = ({text, onClickHandler}) => {
+const Button: React.FC<ButtonProps> = ({text, disabled, onClickHandler}) => {
     return (
-        <button onClick={onClickHandler}>{text}</button>
+        <button onClick={onClickHandler} disabled={disabled}>{text}</button>
     )
 }
 

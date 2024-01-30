@@ -8,7 +8,8 @@ import {
 } from "../constants/strings/strings";
 import {ADD_BOOK, BookEndpoint} from "../service/bookEndpoint";
 import {getBasicAuthHeader} from "../hooks/useFetch";
-import {BookRequestBody} from "../service/requestBodyModel";
+import {BookRequestBody} from "../model/http/requestBodyModel";
+import {useNavigate} from "react-router-dom";
 
 export const submitButtonHandler: MouseEventHandler = async () => {
     let inputFields = document.getElementsByClassName("inputField") as HTMLCollectionOf<HTMLInputElement>
@@ -41,8 +42,4 @@ export const submitButtonHandler: MouseEventHandler = async () => {
             inputFields.namedItem(NUMBER_OF_PAGES_TEXT)!.value = ""
         }
     })
-}
-
-export const backButtonHandler: MouseEventHandler = () => {
-
 }

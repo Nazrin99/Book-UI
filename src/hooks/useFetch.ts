@@ -4,6 +4,12 @@ import {useEffect, useState} from "react";
 const username: string = "nazrin"
 const password: string = "nazrin0965"
 
+interface UseFetchResponseProps<T> {
+    data: T;
+    loading: boolean;
+}
+
+
 function useFetch<T>(endpoint: BookEndpoint) {
     const [data, setData] = useState<T | undefined>(undefined)
     const [loading, setLoading] = useState(true)
@@ -28,7 +34,7 @@ function useFetch<T>(endpoint: BookEndpoint) {
     }, [endpoint.method, endpoint.url])
     
 
-    return [data as T, loading]
+    return {data, loading} as UseFetchResponseProps<T>
 }
 
 export const getBasicAuthHeader = () => {
