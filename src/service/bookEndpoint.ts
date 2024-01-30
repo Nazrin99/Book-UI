@@ -1,4 +1,4 @@
-const host: string = "localhost"
+const host: string = "54.179.10.49"
 const protocol: string = "http"
 const port: string = "8081"
 
